@@ -13,7 +13,7 @@ source:
       - right_python.patch  # [py3k and osx]
 
 build:
-    number: 0
+    number: 1
     skip: True  # [win]
     detect_binary_files_with_prefix: true
 
@@ -23,14 +23,14 @@ requirements:
         - python
         - numpy x.x
         - jasper
-        - libpng >=1.6.21,<1.7
+        - libpng >=1.6.23,<1.7
         - libnetcdf 4.4.*
         - ecmwf_grib {{ version }}
     run:
         - python
         - numpy x.x
         - jasper
-        - libpng >=1.6.21,<1.7
+        - libpng >=1.6.23,<1.7
         - libnetcdf 4.4.*
         - ecmwf_grib {{ version }}
 
